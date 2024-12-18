@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-
+GROQ_API_KEY="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"
 class Chain:
     def __init__(self):
         self.llm = ChatGroq(temperature=0, groq_api_key=os.getenv("GROQ_API_KEY"), model_name="llama-3.1-70b-versatile")
